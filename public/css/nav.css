@@ -1,0 +1,336 @@
+@font-face {
+    font-family: "Quicksand";
+    src: url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+    font-family: "BowlbyOne-Regular";
+    src: url("font/BowlbyOne-Regular.ttf");
+    font-family: "CODE Bold_0";
+    src: url("font/CODE Bold_0.otf");
+    font-family: "Montserrat+Subrayada";
+    src: url("font/MontserratSubrayada-Bold.ttf");
+  }
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kanit:900|Montserrat:900');
+
+body,html {
+    width: 100vw;
+    height: 100vh;
+    background-color: #EBEDD8;
+}
+
+h3,h4,h5,h6,p,span {
+    font-family: "Quicksand";
+    padding: 20px;
+}
+
+label > input {
+    font-family: "Quicksand";
+    padding: 20px;
+}
+
+h2 {
+    font-family: "Quicksand";
+    padding: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+h1#headername {
+    text-align: center;
+    width: 100vw;
+    font-family: "Montserrat+Subrayada";
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 10px;
+    color: #F28D13;
+    text-shadow: 6px 6px #000;
+    
+}
+
+h4#headerdes{
+    text-align: center;
+    font-family: "Quicksand";
+    color: #f2f2f2;
+    padding: 20px;
+    text-shadow: 1px 1px #C8D948;
+}
+
+.col-sm-12 {
+    height: 100vh;
+    transition: background-color 300ms;
+    margin: 0;
+}
+
+.col-sm-12#header {
+    width: 100vw;
+    padding: 0px;
+    position: relative;
+
+}
+
+div.container {
+    margin: 0px ;
+    margin-right: 0px;
+    height: 100%;
+    width: auto;
+    padding: 0px;
+
+}
+
+img.headerpic {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    margin: 0px 0px 0px 0px;
+  }
+
+button.button-round {
+    text-align: center;
+    position: relative;
+    border-radius: 40px;
+    width: 20%;
+    height: 50px; 
+    box-shadow: 2px 2px 4px #000000;
+    background: #F28E13;
+    border: #F28E13;
+    transition: all 0.3s ease 0s;
+    margin-left: 40%;
+    margin-right: 40%
+}
+
+button.button-round:hover{
+    background: #C8D948;
+    border: #C8D948;
+    width: 20%;
+    height: 50px;
+    color: #000;
+    border-radius: 40px;
+    box-shadow: 2px 2px 4px #000000;
+    
+}
+
+button.button-round >  h5 {
+    color: #f2f2f2;
+    padding: 13px;
+    letter-spacing: 1px;
+}
+
+button.button-round >  h5:hover {
+    font-weight: bold;
+    color: #000;
+    padding: 13px;
+    letter-spacing: 1px;
+}
+
+.button-round:hover {
+    color: #FFF;
+    
+}
+
+button.button-round#doc {
+    text-align:center;
+    width: 15%;
+
+}
+  
+section.doctor {
+    background-color: #f2f2f2;
+    height: auto;
+    text-align: center;
+}
+
+@-webkit-keyframes slideInLeft {
+    from {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+  }
+  
+  /* 
+  -------------------
+  navbar
+  -------------------
+  */
+
+  header {
+    width: 100vw;
+    height: 100vh;
+    background: url("picture/header.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.content {
+    width: 94%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.logo {
+    line-height: 30px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    line-height: 30px;
+}
+
+nav ul {
+    font-family: "Quicksand";
+    line-height: 30px;
+    text-decoration: none;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #000;
+    text-shadow: 1px 1px 2px #080808;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 30px;
+    transition: 0.5s;
+    height: auto;
+    
+    
+}
+
+li > a {
+    font-family: "Quicksand";
+    color: #000;
+    text-shadow: 1px 1px 2px #F28E13;
+    text-align: right;
+    text-decoration: none;
+
+}
+
+nav li{ 
+    font-family: "Quicksand";
+    line-height: 30px;
+    text-decoration: none;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #000;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    transition: 0.5s;
+}
+
+nav.black ul {
+    background: #FFF;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #F28E13;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media(max-width: 786px) {
+
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top: 16px;
+    }
+
+    nav ul {
+          max-height: 0px;
+          background: #000;
+    }
+
+    nav.black ul {
+          background: #000;
+    }
+
+    .showing {
+          max-height: 34em;
+    }
+
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+    }
+
+    .menu-icon {
+          display: block;
+    }
+
+}
+
+div.container {
+    text-align: center;
+}

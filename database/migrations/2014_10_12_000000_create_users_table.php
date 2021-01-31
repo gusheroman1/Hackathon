@@ -19,8 +19,20 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('gender')->nullable();
+            $table->integer('age')->nullable();
             $table->rememberToken();
             $table->timestamps();
+        });
+
+        Schema::create('diaries', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('number'); //varchar(255)
+            $table->date('date');
+            $table->string('diaryname');
+            $table->string('content');
+            $table->timestamps();
+
         });
     }
 
